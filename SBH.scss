@@ -1,0 +1,69 @@
+// color palette
+$header-color: #ec8f00;
+$subheader-color: #810000;
+$text-color: lightskyblue;
+$accent-color: #002907;
+$otherBlackColor: #292929;
+$text-size: 14px;
+
+body{
+    background-image: url(libraryBackground.jpg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: darken($otherBlackColor, 20%);
+    border-width: 3px;
+    margin: 5px;
+}
+
+main h1{
+    color: $header-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h2{
+    color: $subheader-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    color: $text-color;
+}
+
+div, a{
+    color: white;
+    font-size: $text-size;
+}
+
+img{
+    max-height: 100px;
+    width: auto;
+}
+
+/* I needed to do the background color this way because otherwise the parent div opacity would make my text opaque */
+section{
+    
+    background-color: rgba(41, 41, 41, 0.300);
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+    &:hover{
+        background-color: darken($otherBlackColor,20%);        
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer div{
+    width: 100%;
+  }
